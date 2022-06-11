@@ -24,8 +24,7 @@ const Header = () => {
 
             <div className={
               "w-full block flex-grow lg:flex lg:items-center lg:w-auto" +
-              (navbarOpen ? " flex-grow" : " hidden")
-            }>
+              (navbarOpen ? " flex-grow" : " hidden")}>
                 <div class="text-base lg:flex-grow">
                     <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-200 mr-4">
                     Browse
