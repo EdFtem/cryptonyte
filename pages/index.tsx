@@ -5,13 +5,14 @@ import Image from 'next/image'
 import Header from '../components/Navbar'
 import WelcomeSection from '../components/Sections/WelcomeSection'
 import { useMoralis } from 'react-moralis'
-import MainPage from '../pages/MainPage'
+import Layout from '../components/Layout'
+import Main from '../pages/main'
 
 const Home: NextPage = () => {
   const { isAuthenticated } = useMoralis();
 
   if(isAuthenticated){
-    return <MainPage/>
+    return <Layout><Main/></Layout>
   }
 
   return (

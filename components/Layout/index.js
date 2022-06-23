@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Sidebar from '../Sidebar'
+import Sidebar from '../Sidebar';
 
 export default function Layout({ children }) {
   return (
@@ -9,8 +9,8 @@ export default function Layout({ children }) {
         <Sidebar/>
         <main className='flex-1 ml-44'>
             {children}
-        </main>     
-    </div>     
+        </main>    
+    </div>
     </>
   );
 }
